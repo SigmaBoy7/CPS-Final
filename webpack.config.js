@@ -45,20 +45,21 @@ module.exports = {
 
       // Подключаем шрифты из css
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.(eot)(\?.*)$/,
         use: [
           {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
+            loader: 'file-loader?name=./fonts/[name].[ext]',
           },
         ]
       },
 
       // Подключаем картинки из css
       {
-        test: /\.(svg|png|jpg|jpeg|webp)$/,
+        test: /\.$/i,
         use: [
           {
-            loader: 'file-loader?name=./static/[name].[ext]'
+            loader: 'file-loader?name=./static/[name].[ext]',
+          
           },
         ]
       },

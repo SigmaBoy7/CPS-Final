@@ -1,0 +1,115 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 16px;
+    background-color: white;
+
+    @media (min-width: 768px){
+        padding: 18px 24px;
+    }
+
+    @media (min-width: 1440px){
+        display: none;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__left{
+        display: flex;
+        align-items: center;
+        
+        .header__item{
+            display: flex;
+            align-items: center;
+        }
+
+        .header__item:not(:last-child){
+            margin-right: 16.73px;
+        }
+
+        .header__item:last-child::after{
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 32px;
+            margin-left: 16px;
+            border-radius: 1px;
+            background-color: #EAEAEA;
+        }
+
+        @media (min-width: 768px){
+            .header__item:last-child::after{
+                display: none;
+            }
+
+            .header__item:first-child{
+                order: 1;
+            }
+            
+            .header__item:not(:last-child){
+                margin-right: 20px;
+            }
+
+            .header__logo{
+                order: 3;
+                margin-right: 0px;
+            }       
+
+            .header__item:first-child:after{
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 32px;
+                margin-left: 20px;
+                border-radius: 1px;
+                background-color: #EAEAEA;
+            }
+
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+
+        .header__item{
+            display: flex;
+            align-items: center;
+        }
+
+        .header__item:not(:last-child){
+            margin-right: 16px;
+        }
+
+        .header__item--unvisible{
+            display: none;
+        }
+
+        @media (min-width: 768px){
+            
+            .header__item--unvisible{
+                display: inline;
+            }
+
+            .header__item:nth-child(3)::after{
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 32px;
+                margin-left: 20px;
+                margin-right: 4px;
+                border-radius: 1px;
+                background-color: #EAEAEA;
+            }
+        }
+    }
+
+}
+
