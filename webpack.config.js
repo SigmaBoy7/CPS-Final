@@ -52,10 +52,9 @@ module.exports = {
           },
         ]
       },
-
       // Подключаем картинки из css
       {
-        test: /\.$/i,
+        test: /\.css$/,
         use: [
           {
             loader: 'file-loader?name=./static/[name].[ext]',

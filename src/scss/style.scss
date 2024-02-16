@@ -1,4 +1,10 @@
 @import 'normalize';
 @import 'fonts';
+@import 'base.scss';
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination-element.min.css";
 @import '../blocks/header/header';
 @import '../blocks/burger/burger';
+@import '../blocks/main/main.scss';
+@import '../blocks/services/services.scss';
+@import '../blocks/swiper/swiper.scss';

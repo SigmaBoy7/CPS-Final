@@ -1,0 +1,46 @@
+.main{
+    box-sizing: border-box;
+
+    @media (min-width: 1440px){
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-areas:
+            "burger services"
+            "burger swiper";
+        gap: 0;
+    }
+
+    &__burger{
+        grid-area: burger;
+
+        @media (min-width: 1440px){
+            width: 306px;
+            position: static;
+            right: 2230px;
+            transform: none;    
+            box-shadow: none;
+        }
+    }
+
+    &__services{
+        grid-area: services;
+        margin-top: 24px;
+
+        @media(min-width: 1440px){
+            margin-top: 42px;
+        }
+    }
+
+    &__brands{
+        margin-top: 24px;
+        grid-area: swiper;
+
+        @media(min-width: 768px){
+            margin-top: 32px;
+        }
+
+        @media(min-width: 1440px){
+            margin-top: 51px;
+        }
+    }
+}
