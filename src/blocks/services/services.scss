@@ -29,15 +29,17 @@
     &__title{
         white-space: nowrap;
         font-family: "TT Lakes", 'sans-serif';
+        color: $basicText;
         font-weight: 700;
         font-size: 28px;
     }
 
     &__links{
+        position: relative;
         display: none;
         
         :hover{
-            transition-duration: 0.5s;
+            transition: $trans;
             filter: contrast(200%);
         }
 
@@ -104,10 +106,10 @@
             overflow-x: hidden;
         }
 
-        &__item{
-
+        &__item{    
+            background-color: $white;
             :hover{
-                transition-duration: 0.5s;
+                transition: $trans;
                 opacity: 0.7;
             }
 
@@ -168,7 +170,7 @@
         overflow: hidden;
         flex-direction: column;
         gap: 16px;
-        color: #1B1C21;
+        color: $basicText;
         font-family: "TT Lakes", "sans-serif";
         font-weight: 400;
         font-size: 14px;

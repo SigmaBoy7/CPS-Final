@@ -2,17 +2,21 @@
     box-sizing: border-box;
     padding: 16px 16px;
     min-height: 160px;
+    height: 1px;
     max-width: 240px;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: $white;
 
-    :hover{
-        transition-duration: 0.5s;
-        transform: scale(1.1);
+    @media(min-width: 1024px){
+        :hover{
+            transition: $trans;
+            transition-duration: transform;
+            transform: scale(1.1);
+        }
     }
 
     @media(min-width: 768px){
-        max-width: none;
+        min-width: none;
     }
 
     &__content{
@@ -21,6 +25,7 @@
         justify-content: space-between;
 
         > span{
+            color: $basicText;
             font-family: 'TT Lakes';
             font-weight: 500;
             align-self: flex-start;

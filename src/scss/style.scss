@@ -1,5 +1,6 @@
 @import 'normalize';
 @import 'fonts';
+@import 'vars.scss';
 @import 'base.scss';
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/pagination-element.min.css";
@@ -11,5 +12,6 @@
 @import '../blocks/swiper/swiper.scss';
 @import '../blocks/brand/brand.scss';
 @import '../blocks/tech/tech.scss';
+@import '../blocks/services-cost/services-cost.scss';
 
 

@@ -3,19 +3,16 @@
     width: 240px;
     padding: 16px;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: $white;
 
     @media(min-width: 768px){
       width: auto;
       max-height: 72px;
-      padding: 16px;
-      border-radius: 6px;
-      background-color: #FFFFFF;
     }
 
     @media(min-width:1024px){
       :hover{
-        transition-duration: 0.5s;
+        transition: $trans;
         transition-property: transform;
         transform: scale(1.1);
       }

@@ -3,13 +3,40 @@
   &__swiper-brands{
     margin-bottom: 24px;
 
+    @media (min-width: 768px){
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1440px){
+      margin-bottom: 50px;
+    }
+
     &--big{
       max-height: fit-content;
       margin-bottom: 46px;
     }
   }
 
-  &__swiper-tech{}
+  &__swiper-tech{
+    margin-bottom: 24px;
 
+    @media (min-width: 768px){
+      margin-bottom: 32px;
+    }
 
+    @media (min-width: 1440px){
+      margin-bottom: 50px;
+    }
+  }
+
+  &__swiper-secvices-cost > .swiper__container{
+    max-height: 200px;
+
+    @media (min-width: 768px){
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+      max-height: none;
+    }
+  }
 }

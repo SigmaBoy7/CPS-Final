@@ -1,43 +1,103 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 
-const swipersList = document.querySelectorAll('.swiper');
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    modules: [Pagination],
+    
 
-swipersList.forEach(() => {
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        modules: [Pagination],
-    
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    
-        breakpoints: {
-            768: {
-                enabled: false
-            }
-        },
-    
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    
-    });
+    breakpoints: {
+        768: {
+            enabled: false
+        }
+    },
 
-})
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
+});
+
+const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    modules: [Pagination],
+    
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+        768: {
+            enabled: false
+        }
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
+});
+const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    modules: [Pagination],
+    
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+        768: {
+            enabled: false
+        }
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
+});
 
 
 const showButton = document.querySelectorAll('.swiper__show-button');

@@ -9,10 +9,10 @@
     height: 100%;
     overflow-y: auto;
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition: $trans;
     transform: translateX(-350px);    
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-    background-color: white;
+    background-color: $white;
 
     &--active{
         transform: translateX(0px);    
@@ -33,7 +33,7 @@
         background-color: rgb(255, 255, 255);
         opacity: 96%;
         transition-property: all;
-        transition-duration: 0.5s;
+        transition: $trans;
         transform: translateX(-100%);
 
         @media(min-width:1440px){
@@ -70,7 +70,8 @@
     }
 
     &__button:hover{
-        transition: filter 1s;
+        transition: $trans;
+        transition-property: filter;
         filter: contrast(200%);
     }
 
@@ -98,14 +99,15 @@
 
         .burger__option-item a{
             text-decoration: none;
-            color: inherit;
             font-family: "TT Lakes";
+            color: $basicText;
             font-size: 16px;
             font-weight: 500;
         }
 
         .burger__option-item:hover{
-            transition: opacity 0.5s;
+            transition: $trans;
+            transition-property: opacity;
             opacity: 0.7;
         }
 
@@ -151,7 +153,8 @@
         max-height: 40px;
 
         :hover{
-            transition-duration: 0.5s;
+            transition: $trans;
+            -webkit-transition : -webkit-filter 0.5s ease;
             filter: contrast(200%);
         }
 
@@ -169,7 +172,7 @@
 
         & > a{
             font-style: normal;
-            color: inherit;
+            color: $basicText;
             text-decoration: none;
             font-family: "TT Lakes", "sans-serif";
             font-size: 16px;
@@ -181,7 +184,7 @@
     &__number > a{
         font-style: normal;
         text-decoration: none;
-        color: inherit;
+        color: $basicText;
         font-family: "TT Lakes", "sans-serif";
         font-size: 24px;
         font-weight: 700;
@@ -190,7 +193,7 @@
     &__languages{
 
         :hover{
-            transition-duration: 0.5s;
+            transition: $trans;
             color: #7E7E82;
         }
 

@@ -11,7 +11,7 @@ html{
 body{
     position: relative;
     margin: 0;
-    background-color: #F8F8F8;
+    background-color: $greyBg;
 }
 
 html {
@@ -38,4 +38,8 @@ button{
     border: none;
     padding-inline: 0;
     cursor: pointer;
+}
+
+li{
+    text-align: left;
 }
