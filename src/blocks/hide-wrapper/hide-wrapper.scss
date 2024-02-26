@@ -1,0 +1,12 @@
+.hide-wrapper{
+
+    @media (min-width: 768px){
+        max-height: 160px;
+        overflow: hidden;
+    
+        &--big{
+            max-height: fit-content;
+            margin-bottom: 46px;
+        } 
+    }
+}

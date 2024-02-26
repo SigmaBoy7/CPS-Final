@@ -8,16 +8,12 @@ const showAllText = () => {
     textParagraph.remove();
     hiddenText.classList.toggle('services__text--visible');
     if (hiddenText.classList.length >= 2){
-        showMoreTextButton.querySelector('.services__show-more-button-text').textContent = 'Скрыть';        
+        showMoreTextButton.querySelector('.services__show-button-text').textContent = 'Скрыть';        
     }else{
-        showMoreTextButton.querySelector('.services__show-more-button-text').textContent = 'Читать далее';        
+        showMoreTextButton.querySelector('.services__show-button-text').textContent = 'Читать далее';        
     }
     showMoreTextButtonIco.classList.toggle('rotate');
 };
-
-// if (window.innerWidth >= 768){
-//     showAllText();
-// };
 
 showMoreTextButton.addEventListener('click', () => {
     showAllText();

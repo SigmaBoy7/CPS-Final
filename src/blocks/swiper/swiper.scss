@@ -1,39 +1,4 @@
 .swiper{
-
-    &__header{
-        width: 100%;
-        padding: 16px;
-        margin-bottom: 16px;
-        border-top: 1px solid #D9FFF5;
-        background: rgb(248,248,248);
-        background: -moz-linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
-        background: -webkit-linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
-        background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f8f8",endColorstr="#ffffff",GradientType=1);
-        
-        @media (min-width: 768px){
-            position: relative; 
-            margin-bottom: 24px;
-        }
-    
-        > h1{
-            text-transform: uppercase;
-            color: rgb(126, 126, 130);
-            font-size: 16px; 
-            line-height: 150%;
-            font-family: 'TT Lakes', sans-serif;
-            font-weight: 400;
-        }
-    }
-
-    &-slide{
-        margin-right: 16px;
-
-        @media(min-width: 768px){
-            margin-right: 0;
-        }
-    }
-
     &__container{
         box-sizing: border-box;
         margin-bottom: 16px;
@@ -44,58 +9,23 @@
             overflow: hidden;
             display: grid;
             gap: 16px 24px;
-            margin-bottom: 24px;
-            padding: 0px 24px 0px 24px;
             grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 24px;
+            margin-right: 0;
+            padding: 0px 24px 0px 24px;
 
             &--big{
                 max-height: fit-content;
                 margin-bottom: 46px;
-            }
+            }    
         }
 
-        @media (min-width: 1120px){
+        @media (min-width: 1440px){
             padding-inline: 0;
             gap: 16px 32px;
-            padding: 0px 32px 0px 32px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 0px 32px 0px 32px;
         }
-    }
-
-    &__show-button{
-        display: none;
-        
-        @media (min-width: 768px){
-            display: flex;
-            align-items: center;
-            margin-top: 22px;
-            margin-left: 16px;
-        }
-
-        &--active{
-            animation: rotate;
-        }
-    
-        &-text{
-            font-family: 'TT Lakes' , sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            color: $basicText;
-        }
-
-        @keyframes spin {
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(180deg);
-        }
-        }
-
-        .rotate{
-            animation:spin 0.5s;
-            animation-fill-mode: forwards;
-        } 
     }
 
     &__pagination{

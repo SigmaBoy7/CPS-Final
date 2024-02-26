@@ -1,0 +1,43 @@
+.tech-card{
+    box-sizing: border-box;
+    min-height: 160px;
+    height: 1px;
+    max-width: 240px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background-color: $white;
+
+    @media(min-width: 1024px){
+        transition-duration: 0.5s;
+        &:hover{
+            transition-property: transform;
+            transition-timing-function: ease;
+            transform: scale(1.1);
+          }
+    }
+
+    @media(min-width: 768px){
+        min-width: 240px;
+        max-width: none;
+    }
+
+    
+
+    &__content{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text{
+        color: $basicText;
+        font-family: 'TT Lakes';
+        font-weight: 500;
+        align-self: flex-start;
+    }
+
+    &__link{
+        align-self: flex-end;
+    }
+}

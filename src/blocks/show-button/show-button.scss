@@ -1,0 +1,33 @@
+.show-button{
+    display: none;
+    
+    @media (min-width: 768px){
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+    }
+
+    &--active{
+        animation: rotate;
+    }
+
+    &__text{
+        font-family: 'TT Lakes' , sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    }
+
+    .rotate{
+        animation:spin 0.5s;
+        animation-fill-mode: forwards;
+    } 
+}
