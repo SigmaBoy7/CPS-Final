@@ -4,5 +4,5 @@ import services from '../blocks/services/services.js';
 import brands from '../blocks/brands/brands.js'
 import showButton from '../blocks/show-button/show-button.js';
 import swiper from '../blocks/swiper/swiper.js';
-
-console.log('Works!');
+import modalCall from '../blocks/modal-call/modal-call.js';
+import modalFeedback from '../blocks/modal-feedback/modal-feedback.js';

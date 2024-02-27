@@ -1,0 +1,25 @@
+.burger-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    opacity: 96%;
+    transition-property: all;
+    transition: $trans;
+    transform: translateX(-100%);
+
+    @media(min-width:1440px){
+        display: none;
+    }
+}
+
+.background--active {
+    transform: translateX(0%);
+}
+
+.background--disable {
+    transform: translateX(-100%);
+}
