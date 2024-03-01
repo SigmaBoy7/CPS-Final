@@ -10,6 +10,7 @@
     }
 
     &__header{
+        position: relative;
         display: flex;
         align-items: center;
     
@@ -22,7 +23,7 @@
         &::before{
             content: url('../img/highlight.svg');
             position: absolute;
-            left: 0;
+            left: -30px;
             height: 40px;
         }
     }
